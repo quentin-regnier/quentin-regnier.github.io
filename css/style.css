@@ -17,9 +17,18 @@ header{
     background-color: #dd5641;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     color: #fffffe;
     font-family: 'DM Serif Display', serif;
+}
+
+nav a{
+    margin: 2rem 2rem;
+}
+
+h1{
+    margin: 2rem 2rem;
 }
 
 footer{
@@ -117,6 +126,19 @@ a{
 
 @media (max-width: 900px){
 
+    header{
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav a, h1{
+        margin: 1rem 1rem;
+    }
+
     footer{
         flex-direction: column;
     }
@@ -141,8 +163,8 @@ a{
 
     .block{
         background-color: #31618a;
-        height: 150px;
-        width: 150px;
+        height: 200px;
+        width: 200px;
         margin: 1rem;
     }
     
