@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/ancre.js"></script>
-    
     <title>Portfolio Quentin Regnier</title>
 
     <!-- typographie -->
@@ -18,17 +15,30 @@
 
 </head>
 <body>
+    
+    <div id="header"></div>
+    <header>
 
-    <header id="header">
-
-        <a href="../index.html"><h1>Portfolio</h1></a>
+        <a href="#header"><h1>Portfolio</h1></a>
 
         <nav>
-            <a href="../index.html#qui">Qui suis-je ?</a>
-            <a href="../index.html#projets">Mes projets</a>
-            <a href="../index.html#footer">Me contacter</a>
+            <a href="#qui">Qui suis-je ?</a>
+            <a href="#projets">Mes projets</a>
+            <a href="#footer">Me contacter</a>
         </nav>
 
+        <div class="mob-menu">
+            <div class="bg-menu"></div>
+            <img class="mob-open" src="images/open.svg" alt="svg pour ouvrir le menu">
+            <aside class="mob-wrapper close">
+                <img class="mob-close" src="images/close.svg" alt="svg pour fermer le menu">
+                <div class="mob-list">
+                    <a href="#qui" class="mob-list_item">Qui suis-je ?</a>
+                    <a href="#projets" class="mob-list_item">Mes projets</a>
+                    <a href="#footer" class="mob-list_item">Me contacter</a>
+                </div>
+            </aside>
+        </div>
     </header>
 
     <main id="haut">
@@ -78,6 +88,8 @@
         </table>
 
     </footer>
+
+    <script src="../js/move.js"></script>
     
 </body>
 </html>
