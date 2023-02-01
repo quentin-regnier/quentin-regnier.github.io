@@ -13,6 +13,7 @@ html, body{
     color: #31618a;
     background-color: #d8ebfa;
     overflow-x: hidden;
+    scroll-behavior: calc(100deg);
 }
 
 header{
@@ -25,7 +26,10 @@ header{
     align-items: center;
     color: #fffffe;
     font-family: 'DM Serif Display', serif;
-    z-index: 3;
+    z-index: 4;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #haut{
@@ -33,8 +37,8 @@ header{
 }
 
 nav a{
-    padding: 1rem;
-    margin-right: 2rem;
+    padding: 1rem 0px 1rem 0px;
+    margin-right: 1rem;
 }
 
 .mob-menu{
@@ -43,9 +47,8 @@ nav a{
     left: 0px;
 }
 
-
 h1{
-    margin: 2rem;
+    margin: 0.5rem;
 }
 
 footer{
@@ -101,14 +104,6 @@ article{
     justify-content: space-evenly;
 }
 
-.block{
-    background-color: #31618a;
-    height: 300px;
-    width: 300px;
-    margin: 2rem;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-}
 .listeprojet{
     background-color: #31618a;
     margin: 0.5rem 0.5rem;
@@ -142,7 +137,12 @@ article{
     border: #31618a double 3px;
     border-radius: 50px;
     padding: 15px;
-    margin: 15px 0%;
+    margin: 15px 0px;
+    transition: all 500ms ease-in-out;
+}
+.cv:hover{
+    padding: 15px 50px 15px 50px;
+    border: #31618a solid 3px;
 }
 
 a{
@@ -150,31 +150,26 @@ a{
     color: #fffffe;
 }
 
-.shadow{
-    display: none;
-
-    z-index: 10;
-    width: 100%;
-    height: 280px;
-    background-color: #dd5641;
-    position: absolute;
-
-    -webkit-box-shadow: 0 1.5px 8px 11px #dd5641;
-    -moz-box-shadow: 0 1.5px 8px 11px #dd5641;
-    box-shadow: 0 1.5px 8px 11px #dd5641;
-}
-
 .ancre{
     position:relative; 
     top:-100px;
 }
 
- /* TRANSITIONS PROJETS #########################################################" */
+/* TRANSITIONS PROJETS #########################################################" */
 
 .projetsimg{
-    height: 300px;
+    height: 305px;
     border-radius: 3px;
     transition: all ease 0.2s;
+}
+
+.block{
+    position: static;
+    height: 300px;
+    width: 300px;
+    margin: 2rem;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
 }
 
 .intro{
@@ -194,15 +189,6 @@ a{
     align-items: center;
 }
 
-.block{
-    background-color: #31618a;
-    height: 300px;
-    width: 300px;
-    margin: 2rem;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-}
-
 h4{
     margin: 5px;
     font-size: 30px;
@@ -219,7 +205,7 @@ span{
 }
 
 .block:hover .intro{
-    bottom: 305px;
+    bottom: 310px;
     background-color: rgba(24, 24, 24, 0.637);
 }
 .block:hover p{
@@ -230,6 +216,51 @@ span{
     transform: scale(1.1) rotate(-3deg);
 }
 
+/* EFFETS LIENS #########################################################" */
+
+.mob-list_item{
+    position: relative;
+    display: inline-block;
+}
+.mob-list_item::before,
+.mob-list_item::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: #31618a;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.mob-list_item::before{
+    top: 0px;
+    transform-origin: left;
+}
+.mob-list_item::after{
+    bottom: 0px;
+    transform-origin: right;
+}
+.mob-list_item:hover::before,
+.mob-list_item:hover::after{
+    transform: scaleX(1);
+}
+
+/* EFFETS SCROLL #########################################################" */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    position: relative;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 
 @media (min-width: 901px){
     .mob-menu{
@@ -238,6 +269,13 @@ span{
 }
 
 @media (max-width: 900px){
+
+    h1{
+        letter-spacing: 3px;
+        padding: 0;
+        margin: 0;
+    }
+
     .bg-menu{
         position: fixed;
         top: 0px;
@@ -248,7 +286,6 @@ span{
     }
 
     header{
-        position: static;
         height: 60px;
         justify-content: space-around;
     }
@@ -260,39 +297,42 @@ span{
     nav{
         display: none;
     }
-    nav a, h1{
-        margin: 0.5rem ;
-    }
+
     .mob-open,
     .mob-close{
         width: 40px;
         height: 40px;
-    }
-    .mob-open{
         position: fixed;
         top: 10px;
         right: 10px;
+        cursor: pointer;
+        transition: all 500ms ease-in-out;
+    }
+    .mob-open:hover,
+    .mob-close:hover{
+        transform: scale(1.25);
     }
     .mob-list{
-        width: 35%;
         position: fixed;
         right: 0px;
-        height: 300px;
-
+        padding: 20px 25px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
         background-color: #dd5641;
     }
+    .mob-list_item:not(h1){
+        padding: 1rem 0px 1rem 0px;
+        margin-right: 1rem;
+    }
     .mob-list:first-of-type{
-        padding-top: 60px;
+        padding-top: 70px;
+    }
+    .mob-list:last-of-type{
+        padding-bottom: 20px;
     }
     .mob-close{
-        position: fixed;
-        top: 10px;
-        right: 10px;
         z-index: 5;
     }
 
@@ -301,16 +341,26 @@ span{
     .opened{
         display: block;
         opacity: 1;
+        animation: openAnim 400ms ease-in-out;
     }
     .close{
         display: none;
         opacity: 0;
     }
 
+    @keyframes openAnim {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
     /* style mob suite */
 
     #haut{
-        padding-top: 0px;
+        padding-top: 60px;
     }
 
     footer{
@@ -337,34 +387,26 @@ span{
         margin-left: 2rem;
     }
 
-    .block{
-        flex: 0 0 auto;
-        background-color: #31618a;
-        height: 200px;
-        width: 200px;
-        margin: 1rem;
-    }
-
-
-    .shadow{
-        display: block;
-    }
     .premier section img{
         margin-top: 0px;
     }
 
     .ancre{
-        position:relative; 
         top:0px;
     }
 
     /* TRANSITIONS PROJETS */
-    .projetsimg{height: 200px;}
+    .projetsimg{height: 205px;}
+    .block{
+        flex: 0 0 auto;
+        height: 200px;
+        width: 200px;
+        margin: 1rem;
+    }
     .intro{
         height: 200px;
         width: 200px;
-        padding: 6px;
-        bottom: 55px;
+        bottom: 60px;
     }
     h4{
         margin: 5px;
@@ -372,10 +414,10 @@ span{
     }
     .deuxieme p{
         font-size: 10px;
-        margin: 30px 10px 10px 10px;
+        margin: 30px 10px 10px 10px;  
     }
     .block:hover .intro{
-        bottom: 205px;
+        bottom: 210px;
     }
     
 }
