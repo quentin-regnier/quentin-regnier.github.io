@@ -192,8 +192,8 @@ a{
 }
 
 .intro{
-    height: 300px;
-    width: 300px;
+    height: 310px;
+    width: 310px;
     padding: 6px;
     box-sizing: border-box;
     position: relative;
@@ -224,7 +224,7 @@ span{
 }
 
 .block:hover .intro{
-    bottom: 310px;
+    bottom: 315px;
     background-color: rgba(24, 24, 24, 0.637);
 }
 .block:hover p{
@@ -434,8 +434,8 @@ span{
         margin: 1rem;
     }
     .intro{
-        height: 200px;
-        width: 200px;
+        height: 205px;
+        width: 205px;
         bottom: 60px;
     }
     h4{
@@ -447,7 +447,7 @@ span{
         margin: 30px 10px 10px 10px;  
     }
     .block:hover .intro{
-        bottom: 210px;
+        bottom: 213px;
     }
     
 }
