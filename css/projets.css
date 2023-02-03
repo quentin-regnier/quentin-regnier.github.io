@@ -1,0 +1,57 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* AUTRES PROJETS #########################################################" */
+
+li>a{
+    color:#d8ebfa;
+}
+
+.dixieme section{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dixieme ul{
+    list-style: none;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(50px, auto);
+
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.dixieme li{
+    background-color: #31618a;
+    padding: 10px 0px;
+    transition: transform 500ms ease;
+}
+
+.dixieme li:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px){
+
+    .dixieme ul{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-auto-rows: minmax(30px, auto);
+    }
+
+    .dixieme li{
+        padding: 5px 0px;
+    }
+}
