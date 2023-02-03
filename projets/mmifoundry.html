@@ -16,15 +16,15 @@
 </head>
 <body>
     
-    <div id="header"></div>
-    <header>
+    <header id="soleil">
 
-        <a href="../index.html#header"><h1>Portfolio</h1></a>
+        <a href="../index.html#header"><h1 class="mob-list_item">Portfolio</h1></a>
 
         <nav>
-            <a href="../index.html#qui">Qui suis-je ?</a>
-            <a href="../index.html#projets">Mes projets</a>
-            <a href="../index.html#footer">Me contacter</a>
+            <a href="../index.html#qui" class="mob-list_item">Qui suis-je ?</a>
+            <a href="../index.html#competences" class="mob-list_item">Mes compétences</a>
+            <a href="../index.html#projets" class="mob-list_item">Mes projets</a>
+            <a href="../index.html#footer" class="mob-list_item">Me contacter</a>
         </nav>
 
         <div class="mob-menu">
@@ -34,6 +34,7 @@
                 <img class="mob-close" src="../images/close.svg" alt="svg pour fermer le menu">
                 <div class="mob-list">
                     <a href="../index.html#qui" class="mob-list_item">Qui suis-je ?</a>
+                    <a href="../index.html#competences" class="mob-list_item">Mes compétences</a>
                     <a href="../index.html#projets" class="mob-list_item">Mes projets</a>
                     <a href="../index.html#footer" class="mob-list_item">Me contacter</a>
                 </div>
@@ -42,37 +43,49 @@
     </header>
 
     <main id="haut">
-        
+
+        <article class="premier">
+
+            <section>
+                <img class="projetsimg" src="../images/presentation_projets/mmifoundry_img.jpg" alt="image de présentation du projet de la mmi foundry ">
+            </section>
+
+            <section>
+                <h2>MMI Foundry</h2>
+            </section>
+
+            <section>
+                <h3>Présentation du projet</h3>
+                <p>J'ai 21 ans et je suis étudiant en deuxième année à l'IUT de Rouen. J'étudie la programmation
+                    web ainsi que le graphisme dans la formation Métiers du Multimédia et de l'Internet.
+                </p>
+            </section>
+
+        </article>
+
+        <hr>
+
+        <article class="quatrieme">
+            <section>
+                <h2>Billetterie en ligne</h2>
+                <img class="projetsimg" src="../images/presentation_projets/billetterie_img.jpg" alt="image de présentation du projet de billetterie">
+                <h3>Présentation du projet</h3>
+            </section>
+        </article>
+
+        <hr>
+
         <article>
-            <h2>MMI Foundry</h2>
-        </article>
-
-        <article class="deuxieme">
-            <h2 id="projets">Mes projets</h2>
             <section>
-                <h3>Développement Web</h3>
-                <a class="block" href="picto.html"></a>
-                <a class="block" href="mmifoundry.html"></a>
-
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-            </section>
-            <section>
-                <h3>Graphisme</h3>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
-                <div class="block"></div>
+                <h2>Billetterie en ligne</h2>
+                <img class="projetsimg" src="../images/presentation_projets/billetterie_img.jpg" alt="image de présentation du projet de billetterie">
+                <h3>Présentation du projet</h3>
             </section>
         </article>
-        
+
     </main>
 
-    <footer id="footer">    
+    <footer>    
 
         <h3>Pour me contacter !</h3>
 
@@ -92,8 +105,8 @@
         </table>
 
     </footer>
-
-    <script src="../js/move.js"></script>
     
+    <script src="../js/index.js" type="text/javascript"></script>
+
 </body>
 </html>

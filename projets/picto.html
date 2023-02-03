@@ -16,59 +16,76 @@
 </head>
 <body>
     
-    <div id="header"></div>
-    <header>
+    <header id="soleil">
 
-        <a href="#header"><h1>Portfolio</h1></a>
+        <a href="../index.html#header"><h1 class="mob-list_item">Portfolio</h1></a>
 
         <nav>
-            <a href="#qui">Qui suis-je ?</a>
-            <a href="#projets">Mes projets</a>
-            <a href="#footer">Me contacter</a>
+            <a href="../index.html#qui" class="mob-list_item">Qui suis-je ?</a>
+            <a href="../index.html#competences" class="mob-list_item">Mes compétences</a>
+            <a href="../index.html#projets" class="mob-list_item">Mes projets</a>
+            <a href="../index.html#footer" class="mob-list_item">Me contacter</a>
         </nav>
 
         <div class="mob-menu">
             <div class="bg-menu"></div>
-            <img class="mob-open" src="images/open.svg" alt="svg pour ouvrir le menu">
+            <img class="mob-open" src="../images/open.svg" alt="svg pour ouvrir le menu">
             <aside class="mob-wrapper close">
-                <img class="mob-close" src="images/close.svg" alt="svg pour fermer le menu">
+                <img class="mob-close" src="../images/close.svg" alt="svg pour fermer le menu">
                 <div class="mob-list">
-                    <a href="#qui" class="mob-list_item">Qui suis-je ?</a>
-                    <a href="#projets" class="mob-list_item">Mes projets</a>
-                    <a href="#footer" class="mob-list_item">Me contacter</a>
+                    <a href="../index.html#qui" class="mob-list_item">Qui suis-je ?</a>
+                    <a href="../index.html#competences" class="mob-list_item">Mes compétences</a>
+                    <a href="../index.html#projets" class="mob-list_item">Mes projets</a>
+                    <a href="../index.html#footer" class="mob-list_item">Me contacter</a>
                 </div>
             </aside>
         </div>
     </header>
 
     <main id="haut">
+
+        <article class="premier">
+
+            <section>
+                <img class="projetsimg" src="../images/presentation_projets/picto_img.jpg" alt="image de présentation du projet de création de pictogrammes">
+            </section>
+
+            <section>
+                <h2>Pictogrammes</h2>
+            </section>
+
+            <section>
+                <h3>Présentation du projet</h3>
+                <p>J'ai 21 ans et je suis étudiant en deuxième année à l'IUT de Rouen. J'étudie la programmation
+                    web ainsi que le graphisme dans la formation Métiers du Multimédia et de l'Internet.
+                </p>
+            </section>
+
+        </article>
+
+        <hr>
+
+        <article class="quatrieme">
+            <section>
+                <h2>Billetterie en ligne</h2>
+                <img class="projetsimg" src="../images/presentation_projets/billetterie_img.jpg" alt="image de présentation du projet de billetterie">
+                <h3>Présentation du projet</h3>
+            </section>
+        </article>
+
+        <hr>
+
         <article>
-            <h2>Pictogrammes</h2>
-        </article>
-        <article class="deuxieme">
-            <h2 id="projets">Mes autres projets</h2>
             <section>
-                <h3>Développement Web</h3>
-                <a class="listeprojet" href="picto.html"><p>Pictogrammes</p></a>
-                <a class="listeprojet" href="picto.html"><p>Pictogrammes</p></a>
-                <a class="listeprojet" href="picto.html"><p>Pictogrammes</p></a>
-                <a class="listeprojet" href="picto.html"><p>Pictogrammes</p></a>
-                <a class="listeprojet" href="picto.html"><p>Pictogrammes</p></a>
-                <a class="listeprojet" href="picto.html"><p>Pictogrammes</p></a>
-            </section>
-            <section>
-                <h3>Graphisme</h3>
-                <a class="listeprojet" href="mmifoundry.html"><p>MMI Foundry</p></a>
-                <a class="listeprojet" href="mmifoundry.html"><p>MMI Foundry</p></a>
-                <a class="listeprojet" href="mmifoundry.html"><p>MMI Foundry</p></a>
-                <a class="listeprojet" href="mmifoundry.html"><p>MMI Foundry</p></a>
-                <a class="listeprojet" href="mmifoundry.html"><p>MMI Foundry</p></a>
+                <h2>Billetterie en ligne</h2>
+                <img class="projetsimg" src="../images/presentation_projets/billetterie_img.jpg" alt="image de présentation du projet de billetterie">
+                <h3>Présentation du projet</h3>
             </section>
         </article>
-        
+
     </main>
 
-    <footer id="footer">    
+    <footer>    
 
         <h3>Pour me contacter !</h3>
 
@@ -88,8 +105,8 @@
         </table>
 
     </footer>
-
-    <script src="../js/move.js"></script>
     
+    <script src="../js/index.js" type="text/javascript"></script>
+
 </body>
 </html>
