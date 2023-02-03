@@ -47,6 +47,8 @@ nav a{
     left: 0px;
 }
 
+/* TITTRES ################################################################# */
+
 h1{
     padding: 0.5rem 0px 0.5rem 0px;
     margin: 0.5rem;
@@ -55,9 +57,14 @@ h2{
     font-family: 'DM Serif Display', serif;
 }
 .deuxieme h3, 
-.troisieme h3{
+.troisieme h3,
+.quatrieme h3{
     width: 100%;
     margin-left: 5rem;
+}
+h4{
+    margin: 5px;
+    font-size: 30px;
 }
 
 footer{
@@ -85,21 +92,23 @@ article{
     flex-wrap: wrap;
 }
 
+.deuxieme, 
+.troisieme{
+    flex-direction: column;
+    align-items: center;
+}
+
 .premier section{
     flex: 1 0 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 .premier p{
     text-align: justify;
-    padding: 0px 5%;
-}
-
-.deuxieme, .troisieme{
-    flex-direction: column;
-    align-items: center;
+    max-width: 75%;
 }
 
 .deuxieme section,
@@ -208,10 +217,6 @@ a{
     align-items: center;
 }
 
-h4{
-    margin: 5px;
-    font-size: 30px;
-}
 .deuxieme p{
     text-align: justify;
     font-size: 15px;
@@ -294,6 +299,15 @@ span{
         padding: 0;
         margin: 0;
     }
+    .deuxieme h3,
+    .troisieme h3,
+    .quatrieme h3{
+        margin-left: 2rem;
+    }
+    h4{
+        margin: 5px;
+        font-size: 20px;
+    }
 
     .bg-menu{
         position: fixed;
@@ -307,10 +321,6 @@ span{
     header{
         height: 60px;
         justify-content: space-around;
-    }
-
-    .premier{
-        padding-top: 20px;
     }
 
     nav{
@@ -385,13 +395,19 @@ span{
     footer{
         flex-direction: column;
     }
-    th, td{
+    th, 
+    td{
         padding: 5px 10px;
     }
 
     .premier{
         display: flex;
         flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .premier p{
+        max-width: 90%;
     }
 
     .premier section img{
@@ -401,15 +417,6 @@ span{
         margin: 0px;
         padding: 0px;
     } 
-
-    .deuxieme h3,
-    .troisieme h3{
-        margin-left: 2rem;
-    }
-
-    .premier section img{
-        margin-top: 0px;
-    }
 
     .troisieme ul{
         grid-template-columns: repeat(2, 1fr);
@@ -437,10 +444,6 @@ span{
         height: 205px;
         width: 205px;
         bottom: 60px;
-    }
-    h4{
-        margin: 5px;
-        font-size: 20px;
     }
     .deuxieme p{
         font-size: 10px;
