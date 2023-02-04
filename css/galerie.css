@@ -86,9 +86,10 @@ body{
 }
 
 #popup-img{
-    width: 80%;
+    width: auto;
     height: auto;
-    max-height: 100vh;
+    max-width: 100%;
+    max-height:  calc(100vh - 150px);
 }
 
 #popup-close{
@@ -130,6 +131,12 @@ body{
 
         width: 100vw;
         height: calc( 100vh - 60px);
+    }
+    #popup-img{
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height:  calc(100vh - 90px);
     }
     #popup-close{
         top: 15px;

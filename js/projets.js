@@ -12,7 +12,7 @@ const openPopup = (e) => {
 };
 const closePopup = () => {
     popupBg.classList.remove("middle");
-    popupImg.src = `../images/dessin/${clickedImageName}.jpg`;
+    popupImg.src = `#`;
 };
 
 allGridItems.forEach((el) => el.addEventListener("click", openPopup));
