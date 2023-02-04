@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+#haut{
+    margin-top: 100px;
+    padding: 20px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 350px;
+    gap: 5px;
+    grid-auto-flow: dense;
+}
+#grid::-webkit-scrollbar{
+    background-color: #dedede;
+    width: 10px;
+}
+#grid::-webkit-scrollbar-thumb{
+    background-color: #757575;
+}
+
+.grid-item{
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.grid-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.grid-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.2s ease;
+}
+.grid-img:hover{
+    transform: scale(1.2);
+}
+
+#dessin-2,
+#dessin-7,
+#dessin-16{
+    grid-column: span 2;
+}
+#dessin-4,
+#dessin-5,
+#dessin-10{
+    grid-row: span 2;
+}
+
+#popup-bg{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    height: calc( 100vh - 100px);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup-bg.middle{    
+    display: flex;
+}
+
+#popup-content{
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#popup-img{
+    width: 80%;
+    height: auto;
+    max-height: 100vh;
+}
+
+#popup-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #dd5641;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+#popup-close>img{
+    width: 50px;
+    height: 50px;
+}
+#popup-close:hover{
+    transform: scale(1.25);
+}
+
+@media (max-width: 900px){
+    #haut{
+        margin-top: 60px;
+        padding: 10px;
+    }
+    #grid{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-auto-rows: 150px;
+        gap: 3px;
+    }
+
+    #popup-bg{
+        top: 60px;
+        left: 0;
+
+        width: 100vw;
+        height: calc( 100vh - 60px);
+    }
+    #popup-close{
+        top: 15px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    #popup-close>img{
+        width: 35px;
+        height: 35px;
+    }
+    #popup-close:hover{
+        transform: scale(1.15);
+    }
+}

@@ -18,7 +18,6 @@ close.addEventListener("click", () => {
 // header scroll up et down #############################
 
 function myFunction(x) {
-    setInterval('myFunction',3000);
     if (x.matches) { // If media query matches
         let theEnd = 0;
         navbar = document.getElementById('soleil');
@@ -26,12 +25,13 @@ function myFunction(x) {
         window.addEventListener('scroll', function(){
             var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
             if (scrollTop > theEnd) {
+                console.log("help");
                 navbar.style.top= '-60px';
             }
             else{
                 navbar.style.top= '0px';
             }
-            theEnd = scrollTop
+            theEnd = scrollTop;
         })
     }
 }
@@ -61,3 +61,5 @@ function reveal() {
         }
     }
 }
+
+
