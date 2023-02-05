@@ -55,17 +55,18 @@ h1{
 h2{
     font-family: 'DM Serif Display', serif;
     font-size: 32px;
+    text-transform: uppercase;
 }
 .deuxieme h3, 
 .troisieme h3,
 .quatrieme h3{
     width: 100%;
     margin-left: 5rem;
-    font-size: 24px;
+    font-size: 30px;
 }
 h4{
     margin: 5px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 p{
