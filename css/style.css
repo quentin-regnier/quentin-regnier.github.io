@@ -54,17 +54,22 @@ h1{
 }
 h2{
     font-family: 'DM Serif Display', serif;
-    font-size: xx-large;
+    font-size: 32px;
 }
 .deuxieme h3, 
 .troisieme h3,
 .quatrieme h3{
     width: 100%;
     margin-left: 5rem;
+    font-size: 24px;
 }
 h4{
     margin: 5px;
     font-size: 30px;
+}
+
+p{
+    font-size: large;
 }
 
 footer{
@@ -160,7 +165,8 @@ article{
 /* liens */
 
 .cv{
-    color: #31618a;
+    color: #d8ebfa;
+    background-color: #31618a;
     font-size: larger;
     text-decoration: none;
     border: #31618a double 3px;
@@ -171,7 +177,6 @@ article{
 }
 .cv:hover{
     padding: 15px 50px 15px 50px;
-    border: #31618a solid 3px;
 }
 
 a{
@@ -299,6 +304,9 @@ span{
         letter-spacing: 3px;
         padding: 0;
         margin: 0;
+    }
+    h2{
+        font-size: 1.5rem;
     }
     .deuxieme h3,
     .troisieme h3,
