@@ -20,6 +20,15 @@ h2{
     margin-right: auto;
 }
 
+.premier h3, 
+.deuxieme h3, 
+.troisieme h3,
+.quatrieme h3{
+    width: 100%;
+    margin-left: 5rem;
+    font-size: 25px;
+}
+
 .dixieme ul{
     list-style: none;
     display: grid;
@@ -43,6 +52,56 @@ h2{
     transform: scale(1.1);
 }
 
+.deuxieme p{
+    text-align: justify;
+    font-size: large;
+    max-width: 75%;
+    margin: 30px 10px 10px 10px;
+    visibility:visible;
+    opacity: 1;
+}
+
+img:not(.projetsimg, .mob-close, .mob-open){
+    margin: 10px;
+    max-width: 600px;
+    max-height: 600px;
+    transition: transform 0.5s ease;
+}
+img:not(.projetsimg, .mob-close, .mob-open):hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px black;
+    z-index: 3;
+}
+
+.premier section{
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.premier{
+    flex-direction: row;
+}
+
+.picw{
+    width: 120px;
+}
+.pich{
+    height: 100px;
+}
+
+.logohw{
+    width: 250px;
+    height: 250px;
+}
+
+.place article section img:not(.projetsimg, .mob-close, .mob-open){
+    max-width: 500px;
+    max-height: 600px;
+}
+
 @media (max-width: 900px){
 
     .dixieme ul{
@@ -57,5 +116,23 @@ h2{
 
     .dixieme li:hover{
         transform: scale(1.05);
+    }
+
+    .section p{
+        max-width: 90%;
+    }
+
+    img:not(.projetsimg, .mob-close, .mob-open){
+        margin: 10px;
+        max-height: 500px;
+        max-width: 80%;
+    }
+    img:not(.projetsimg, .mob-close, .mob-open):hover{
+        transform: scale(1.05);
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .premier{
+        flex-direction: column;
     }
 }
