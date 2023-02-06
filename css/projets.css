@@ -102,6 +102,11 @@ img:not(.projetsimg, .mob-close, .mob-open):hover{
     max-height: 600px;
 }
 
+.colcol img{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 @media (max-width: 900px){
 
     .dixieme ul{

@@ -114,6 +114,66 @@ body{
     transform: scale(1.25);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* AUTRES PROJETS #########################################################" */
+
+li>a{
+    color:#d8ebfa;
+}
+
+.dixieme section{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.premier h3, 
+.deuxieme h3, 
+.troisieme h3,
+.quatrieme h3{
+    width: 100%;
+    margin-left: 5rem;
+    font-size: 25px;
+}
+
+.dixieme ul{
+    list-style: none;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(50px, auto);
+
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.dixieme li{
+    background-color: #31618a;
+    padding: 10px 0px;
+    transition: transform 500ms ease;
+}
+
+.dixieme li:hover{
+    transform: scale(1.1);
+}
+
 @media (max-width: 900px){
     #haut{
         margin-top: 60px;
@@ -150,5 +210,26 @@ body{
     }
     #popup-close:hover{
         transform: scale(1.15);
+    }
+
+
+
+
+
+
+
+
+    .dixieme ul{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-auto-rows: minmax(30px, auto);
+    }
+
+    .dixieme li{
+        padding: 5px 0px;
+    }
+
+    .dixieme li:hover{
+        transform: scale(1.05);
     }
 }
