@@ -50,13 +50,13 @@ body{
 }
 
 #dessin-2,
-#dessin-7,
-#dessin-16{
+#dessin-11,
+#dessin-12{
     grid-column: span 2;
 }
-#dessin-4,
-#dessin-5,
-#dessin-10{
+#dessin-6,
+#dessin-10,
+#dessin-14{
     grid-row: span 2;
 }
 
@@ -113,11 +113,6 @@ body{
 #popup-close:hover{
     transform: scale(1.25);
 }
-
-
-
-
-
 
 
 
@@ -211,8 +206,6 @@ h2{
     #popup-close:hover{
         transform: scale(1.15);
     }
-
-
 
 
 
