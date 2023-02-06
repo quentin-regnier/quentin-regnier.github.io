@@ -107,6 +107,11 @@ img:not(.projetsimg, .mob-close, .mob-open):hover{
     margin-right: 10%;
 }
 
+embed{
+    width: 80%;
+    height: 700px;
+}
+
 @media (max-width: 900px){
 
     .dixieme ul{
@@ -139,5 +144,10 @@ img:not(.projetsimg, .mob-close, .mob-open):hover{
 
     .premier{
         flex-direction: column;
+    }
+
+    embed{
+        width: 80%;
+        height: 500px;
     }
 }
