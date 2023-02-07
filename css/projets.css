@@ -85,13 +85,13 @@ h2{
 .logohw{
     width: 250px;
 }
-
 .place article section img:not(.projetsimg, .mob-close, .mob-open){
     margin: 10px;
     max-width: 600px;
     max-height: 700px;
     transition: transform 0.5s ease;
 }
+
 img:not(.projetsimg, .mob-close, .mob-open):hover{
     transform: scale(1.1);
     box-shadow: 5px 5px 20px black;
@@ -147,7 +147,7 @@ embed{
 
     .logohw{
         width: 30%;
-        margin: 10%;
+        margin: 50%;
         height: auto;
     }
 
