@@ -55,8 +55,8 @@ h2{
 .deuxieme p{
     text-align: justify;
     font-size: large;
-    max-width: 75%;
-    margin: 30px 10px 10px 10px;
+    max-width: 80%;
+    margin: 30px 10% 10px 10%;
     visibility:visible;
     opacity: 1;
 }
@@ -84,13 +84,12 @@ h2{
 
 .logohw{
     width: 250px;
-    height: 250px;
 }
 
 .place article section img:not(.projetsimg, .mob-close, .mob-open){
     margin: 10px;
     max-width: 600px;
-    max-height: 600px;
+    max-height: 700px;
     transition: transform 0.5s ease;
 }
 img:not(.projetsimg, .mob-close, .mob-open):hover{
@@ -125,10 +124,6 @@ embed{
         transform: scale(1.05);
     }
 
-    .section p{
-        max-width: 90%;
-    }
-
     .place article section img:not(.projetsimg, .mob-close, .mob-open){
         margin: 10%;
         max-width: 80%;
@@ -151,8 +146,8 @@ embed{
     }
 
     .logohw{
-        max-width: 250px;
-        max-height: 250px;
+        width: 60%;
+        height: auto;
     }
 
     embed{
