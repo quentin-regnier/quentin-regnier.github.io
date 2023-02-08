@@ -45,8 +45,8 @@ h2{
 
 .deuxieme p{
     text-align: justify;
-    font-size: x-large;
-    max-width: 80%;
+    font-size: large;
+    width: 100%;
     margin: 20px 10% 10px 10%;
 }
 
@@ -72,10 +72,12 @@ h2{
 }
 
 .logohw{
-    width: 250px;
+    max-width: 15%;
+    height: auto;
+    margin: 20px auto;
 }
 
-article section img:not(.projetsimg, .mob-close, .mob-open, .pich, .picw){
+article section img:not(.projetsimg, .mob-close, .mob-open, .pich, .picw, .logohw){
     margin: 10px;
     max-width: 600px;
     max-height: 600px;
@@ -143,11 +145,7 @@ embed{
         display: none;
     }
 
-    .logohw{
-        width: 30%;
-        margin: 50%;
-        height: auto;
-    }
+
 
     embed{
         width: 80%;
