@@ -20,15 +20,6 @@ h2{
     margin-right: auto;
 }
 
-.premier h3, 
-.deuxieme h3, 
-.troisieme h3,
-.quatrieme h3{
-    width: 100%;
-    margin-left: 5rem;
-    font-size: 25px;
-}
-
 .dixieme ul{
     list-style: none;
     display: grid;
@@ -54,11 +45,9 @@ h2{
 
 .deuxieme p{
     text-align: justify;
-    font-size: large;
+    font-size: x-large;
     max-width: 80%;
-    margin: 30px 10% 10px 10%;
-    visibility:visible;
-    opacity: 1;
+    margin: 20px 10% 10px 10%;
 }
 
 
@@ -115,6 +104,12 @@ embed{
 }
 
 @media (max-width: 900px){
+
+    .deuxieme p{
+        font-size: large;
+        max-width: 90%;
+        margin: 20px 5% 10px 5%;
+    }
 
     .dixieme ul{
         grid-template-columns: repeat(1, 1fr);

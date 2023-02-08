@@ -28,7 +28,6 @@ header{
     z-index: 4;
 
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 #haut{
@@ -58,11 +57,10 @@ h2{
     text-transform: uppercase;
 }
 .deuxieme h3, 
-.troisieme h3,
-.quatrieme h3{
-    width: 100%;
-    margin-left: 5rem;
-    font-size: 30px;
+.troisieme h3{
+    width: 90%;
+    margin-left: 10%;
+    font-size: 28px;
 }
 h4{
     margin: 5px;
@@ -226,7 +224,7 @@ a{
 
 aside p{
     text-align: justify;
-    font-size: 15px;
+    font-size: 18px;
     margin: 70px 10px 10px 10px;
     visibility: hidden;
     opacity: 0;
@@ -302,17 +300,17 @@ span{
 @media (max-width: 900px){
 
     h1{
-        letter-spacing: 3px;
         padding: 0;
         margin: 0;
     }
     h2{
         font-size: 1.5rem;
     }
-    .deuxieme h3,
-    .troisieme h3,
-    .quatrieme h3{
-        margin-left: 2rem;
+    .deuxieme section h3,
+    .troisieme section h3{
+        width: 97%;
+        margin-left: 3%;
+        font-size: 24px;
     }
     h4{
         margin: 5px;
@@ -456,8 +454,8 @@ span{
         bottom: 60px;
     }
     .deuxieme p{
-        font-size: 10px;
-        margin: 30px 10px 10px 10px;  
+        font-size: 12px;
+        margin: 20px 10px 10px 10px;  
     }
     .block:hover .intro{
         bottom: 213px;

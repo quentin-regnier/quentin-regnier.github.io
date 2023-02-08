@@ -137,15 +137,6 @@ h2{
     margin-right: auto;
 }
 
-.premier h3, 
-.deuxieme h3, 
-.troisieme h3,
-.quatrieme h3{
-    width: 100%;
-    margin-left: 5rem;
-    font-size: 25px;
-}
-
 .dixieme ul{
     list-style: none;
     display: grid;
