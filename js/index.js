@@ -25,7 +25,6 @@ function myFunction(x) {
         window.addEventListener('scroll', function(){
             var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
             if (scrollTop > theEnd) {
-                console.log("help");
                 navbar.style.top= '-60px';
             }
             else{
