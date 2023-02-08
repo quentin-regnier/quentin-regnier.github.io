@@ -85,13 +85,13 @@ h2{
 .logohw{
     width: 250px;
 }
-.place article section img:not(.projetsimg, .mob-close, .mob-open){
+.place article section img:not(.projetsimg, .mob-close, .mob-open, .pich, .picw){
     margin: 10px;
     max-width: 600px;
     max-height: 600px;
     transition: transform 0.5s ease;
 }
-article section img:not(.projetsimg, .mob-close, .mob-open){
+article section img:not(.projetsimg, .mob-close, .mob-open, .pich, .picw){
     margin: 10px;
     max-width: 600px;
     max-height: 600px;
@@ -117,8 +117,8 @@ embed{
 @media (max-width: 900px){
 
     .dixieme ul{
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
         grid-auto-rows: minmax(30px, auto);
     }
 
@@ -130,13 +130,18 @@ embed{
         transform: scale(1.05);
     }
 
-    .place article section img:not(.projetsimg, .mob-close, .mob-open, .logohw){
-        margin: 10%;
-        max-width: 80%;
+    .place article section img:not(.projetsimg, .mob-close, .mob-open, .logohw, .pich, .picw){
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
     }
-    img:not(.projetsimg, .mob-close, .mob-open, .logohw){
+    img:not(.projetsimg, .mob-close, .mob-open, .logohw, .pich, .picw){
         margin: 10%;
-        max-width: 80%;
+        width: 80%;
+    }
+    .pich, 
+    .picw{
+        margin: 5px;
     }
     img:not(.projetsimg, .mob-close, .mob-open):hover{
         transform: scale(1.05);

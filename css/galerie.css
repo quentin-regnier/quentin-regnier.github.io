@@ -211,12 +211,18 @@ h2{
 
 
 
-
+    .dixieme ul{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(30px, auto);
+    }
+    /*
     .dixieme ul{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 15px;
         grid-auto-rows: minmax(30px, auto);
     }
+    */
 
     .dixieme li{
         padding: 5px 0px;
