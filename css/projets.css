@@ -82,7 +82,7 @@ article section img:not(.projetsimg, .mob-close, .mob-open, .pich, .picw){
     transition: transform 0.5s ease;
 }
 
-img:not(.projetsimg, .mob-close, .mob-open):hover{
+article section img:not(.projetsimg, .mob-close, .mob-open):hover{
     transform: scale(1.1);
     box-shadow: 5px 5px 20px black;
     z-index: 3;
@@ -107,7 +107,7 @@ embed{
     }
 
     .dixieme ul{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
         grid-auto-rows: minmax(30px, auto);
     }
@@ -120,8 +120,9 @@ embed{
         transform: scale(1.05);
     }
 
-    img:not(.projetsimg, .mob-close, .mob-open, .logohw, .pich, .picw){
-        margin: 10%;
+    article section img:not(.projetsimg, .mob-close, .mob-open, .logohw, .pich, .picw){
+        margin: 15px 10%;
+        max-height: none;
         width: 80%;
     }
     .pich, 

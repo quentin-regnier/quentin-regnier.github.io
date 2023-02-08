@@ -26,6 +26,7 @@ header{
     color: #fffffe;
     font-family: 'DM Serif Display', serif;
     z-index: 4;
+    letter-spacing: 1px;
 
     text-transform: uppercase;
 }
@@ -36,7 +37,7 @@ header{
 
 nav a{
     padding: 1rem 0px 1rem 0px;
-    margin-right: 1rem;
+    margin-right: 30px;
 }
 
 .mob-menu{
@@ -50,10 +51,12 @@ nav a{
 h1{
     padding: 0.5rem 0px 0.5rem 0px;
     margin: 0.5rem;
+    letter-spacing: 3px;
 }
 h2{
     font-family: 'DM Serif Display', serif;
     font-size: 32px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 .deuxieme h3, 
@@ -225,7 +228,7 @@ a{
 aside p{
     text-align: justify;
     font-size: 18px;
-    margin: 70px 10px 10px 10px;
+    margin: 40px 10px 10px 10px;
     visibility: hidden;
     opacity: 0;
 }
@@ -302,9 +305,11 @@ span{
     h1{
         padding: 0;
         margin: 0;
+        letter-spacing: 2px;
     }
     h2{
         font-size: 1.5rem;
+        letter-spacing: 1px;
     }
     .deuxieme section h3,
     .troisieme section h3{
@@ -453,7 +458,7 @@ span{
         width: 205px;
         bottom: 60px;
     }
-    .deuxieme p{
+    aside p{
         font-size: 12px;
         margin: 20px 10px 10px 10px;  
     }
