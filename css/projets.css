@@ -34,12 +34,14 @@ h2{
 }
 
 .dixieme li{
-    background-color: #31618a;
+    background-color: #f9fbfa;
     padding: 10px 0px;
-    transition: transform 500ms ease;
+    border-radius: 50px;
+    transition: all 500ms ease;
 }
 
 .dixieme li:hover{
+    background-color: #ffb342;
     transform: scale(1.1);
 }
 
@@ -62,6 +64,10 @@ h2{
 
 .premier{
     flex-direction: row;
+}
+
+.projetsimg{
+    border-radius: 10px;
 }
 
 .picw{

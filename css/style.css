@@ -5,25 +5,38 @@
 #dd5641 rouge
 */ 
 
+/* COULEURS N1
+#f9fbfa blanc
+#253537 noir
+#ffb342 jaune       pas utilise
+#e94d49 rouge
+*/ 
+
+/* COULEURS N2 
+#ece4b8 blanc
+#08302c vert fonce
+#e01a1f rouge
+*/ 
+
 
 html, body{
     padding: 0px;
     margin: 0px;
     font-family: 'Nunito', sans-serif;
-    color: #31618a;
-    background-color: #d8ebfa;
+    color: #f9fbfa;
+    background-color: #253537;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 header{
-    background-color: #dd5641;
+    background-color: #ffb342;
     position: fixed;
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fffffe;
     font-family: 'DM Serif Display', serif;
     z-index: 4;
     letter-spacing: 1px;
@@ -37,7 +50,11 @@ header{
 
 nav a{
     padding: 1rem 0px 1rem 0px;
-    margin-right: 30px;
+    margin-right: 25px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+
 }
 
 .mob-menu{
@@ -71,24 +88,25 @@ h4{
 }
 
 p{
-    font-size: large;
+    font-size: 22px;
 }
 
+footer h3{
+    font-size: 28px;
+}
 footer{
-    background-color: #dd5641;
-    color: #fffffe;
+    background-color: #ffb342;
+    color: #253537;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
 
-th{
-    display: flex;
-    padding: 10px;
-}
+th,
 td{
     padding: 10px;
+    font-size: 20px;
 }
 
 article{
@@ -139,14 +157,15 @@ article{
     width: 75px;
 }
 .troisieme li{
-    transition: transform 500ms ease;
+    transition: all 500ms ease;
 }
 .troisieme li:hover{
+    color: #ffb342;
     transform: scale(1.1);
 }
 
 .listeprojet{
-    background-color: #31618a;
+    background-color: #f9fbfa;
     margin: 0.5rem 0.5rem;
     padding: 0px 1rem;
 }
@@ -162,28 +181,31 @@ article{
 
     box-shadow: 0px 0px 20px black;
 }
+.premier section img:not(.projetsimg){
+    border-radius: 25%;
+}
 
 
 /* liens */
 
 .cv{
-    color: #d8ebfa;
-    background-color: #31618a;
+    color: #253537;
+    background-color: #f9fbfa;
     font-size: larger;
     text-decoration: none;
-    border: #31618a double 3px;
     border-radius: 50px;
     padding: 15px;
     margin: 15px 0px;
     transition: all 500ms ease-in-out;
 }
 .cv:hover{
+    background-color: #ffb342;
     padding: 15px 50px 15px 50px;
 }
 
 a{
     text-decoration: none;
-    color: #fffffe;
+    color: #253537;
 }
 
 .ancre{
@@ -195,7 +217,6 @@ a{
 
 .projetsimg{
     height: 305px;
-    border-radius: 3px;
     transition: all ease 0.2s;
 }
 
@@ -203,6 +224,7 @@ a{
     position: static;
     height: 300px;
     width: 300px;
+    border-radius: 10px;
     margin: 2rem;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
@@ -216,8 +238,8 @@ a{
     position: relative;
     bottom: 70px;
 
-    background-color: rgba(27, 27, 27, 0.5);
-    color: rgb(255, 255, 255);
+    background-color: rgba(37, 53, 55, 0.6);
+    color: #f9fbfa;
     transition: all ease 0.4s;
 
     display: flex;
@@ -238,7 +260,7 @@ span{
 
 .block:hover .intro{
     bottom: 315px;
-    background-color: rgba(24, 24, 24, 0.637);
+    background-color: rgba(37, 53, 55, 0.8);
 }
 .block:hover p{
     opacity: 1;
@@ -261,7 +283,7 @@ span{
     left: 0px;
     width: 100%;
     height: 3px;
-    background-color: #31618a;
+    background-color: #253537;
     transform: scaleX(0);
     transition: transform 0.5s;
 }
@@ -326,7 +348,7 @@ span{
         position: fixed;
         top: 0px;
         right: 0px;
-        background-color: #dd5641;
+        background-color: #ffb342;
         width: 60px;
         height: 60px;
     }
@@ -355,6 +377,7 @@ span{
         transform: scale(1.25);
     }
     .mob-list{
+        font-family: 'Nunito', sans-serif;
         position: fixed;
         right: 0px;
         padding: 20px 25px;
@@ -362,7 +385,7 @@ span{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #dd5641;
+        background-color: #ffb342;
     }
     .mob-list_item:not(h1){
         padding: 1rem 0px 1rem 0px;
@@ -408,8 +431,12 @@ span{
     footer{
         flex-direction: column;
     }
+    footer h3{
+        font-size: 24px;
+    }
     th, 
     td{
+        font-size: 18px;
         padding: 5px 10px;
     }
 
